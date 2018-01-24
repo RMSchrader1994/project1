@@ -1,26 +1,55 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# This is my first Markdown file
+
+Just a paragraphe of plain old text. No p tags or breaks, just an automatic paragraph like what you see here.
+
+## This is a subheading
+
+Something else something else something something something
+
+### This is like h3
+
+something
+
+#### This is like h4
+
+something
+
+##### This is like h5
+
+something
+
+###### This is like h6
+
+Here is some *italic text*, **bold text**, **_bold and italic_**, [a link](https://www.google.com)
+
+* unordered list item 1
+* unordered list item 2
+* unordered list item 3
+    1. ordered sub list item 1
+    2. ordered sub list item 2
+    3. ordered sub list item 3
+        1. so on
+        4. and so
+        5. forth
+1. hi
+1. hi
+1. hi
+1. hi
+
+As someone once said:
+>Blah blah blah blah blah
+>>Someone, Sometime
+>>>Cool!
+
+I used semantic `<section>` tags instead of `<divs>`
 
 
-Hi there! Welcome to Cloud9 IDE!
+```javascript
+function multiplication(a,b) {
+    if(typeof(a) == "number" && typeof(b) == "number") {
+        return a * b;
+    } else {
+        return("Error!");
+    }
+}
 
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
