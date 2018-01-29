@@ -1,0 +1,28 @@
+header {
+    background-image: url(img/Banner/headerBanner.jpg);
+    height: 200px;
+    width:100%;
+    background-size: cover;
+}
+ul li a {
+    color: rgba(255,215,0,.4);
+    margin-top: 10px;
+}
+ul li a:hover {
+    background-color: lavender;
+    opacity: .5;
+    color: maroon;
+}
+.logo {
+    
+    height: 200px;
+    width:100%;
+}
+
+.menu {
+    height: 200px;
+    width: 100%;
+}
+       
+ 
+
