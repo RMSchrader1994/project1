@@ -200,4 +200,16 @@ h4 {
       text-align: center;
       padding: 10px;
     }
+.charPic {
+      position:absolute;
+      height: 350px;
+      width: 95%;
+      border-radius: 10px;
+      margin: 10px;
+      text-align: center;
+      
+}
+.charPic:hover{
+  opacity: 0;
+}
 
