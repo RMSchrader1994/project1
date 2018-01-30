@@ -211,7 +211,14 @@ h4 {
 /*Characters*/
 
 .box {
-  
-}       
- 
+      display: inline-block;
+            height: 320px;
+            width: 80%;
+            background-color: orange;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            padding: 5px;
+    
+ }
 
