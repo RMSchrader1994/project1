@@ -78,34 +78,13 @@ ul li a:hover {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
 }
-.timeline .timeline-item .timeline-badge i,
-.timeline .timeline-item .timeline-badge .fa,
-.timeline .timeline-item .timeline-badge .glyphicon {
-  top: 2px;
-  left: 0px;
-}
-.timeline .timeline-item .timeline-badge.primary {
-  background-color: #1f9eba;
-}
-.timeline .timeline-item .timeline-badge.info {
-  background-color: #5bc0de;
-}
-.timeline .timeline-item .timeline-badge.success {
-  background-color: #59ba1f;
-}
-.timeline .timeline-item .timeline-badge.warning {
-  background-color: #d1bd10;
-}
-.timeline .timeline-item .timeline-badge.danger {
-  background-color: #ba1f1f;
-}
 .timeline .timeline-item .timeline-panel {
   position: relative;
   width: 46%;
   float: left;
   right: 16px;
-  border: 1px solid #c0c0c0;
-  background: #ffffff;
+  /*border: 1px solid #c0c0c0;*/
+  /*background: #ffffff;*/
   border-radius: 2px;
   padding: 20px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -180,6 +159,7 @@ ul li a:hover {
   left: 0 !important;
   right: 0 !important;
   width: 100%;
+  height: 380px;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item .timeline-panel:before {
@@ -212,13 +192,12 @@ h4 {
 
 .box {
       display: inline-block;
-            height: 320px;
-            width: 80%;
-            background-color: orange;
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-            padding: 5px;
-    
- }
+      height: 350px;
+      width: 100%;
+      background-color: rgba(255,215,0,.25);
+      border-radius: 10px;
+      margin: 10px;
+      text-align: center;
+      padding: 10px;
+    }
 
