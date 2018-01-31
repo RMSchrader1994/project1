@@ -194,7 +194,7 @@ h4 {
 
 .box {
       display: inline-block;
-      height: 350px;
+      height: 450px;
       width: 100%;
       background-color: rgba(255,215,0,.25);
       border-radius: 10px;
@@ -204,7 +204,7 @@ h4 {
     }
 .charPic {
       position:absolute;
-      height: 350px;
+      height: 450px;
       width: 95%;
       border-radius: 10px;
       margin: 10px;

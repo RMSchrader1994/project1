@@ -1,5 +1,5 @@
  body {
-    background: linear-gradient(-130deg, #6560F2, #4B1248);
+    background: linear-gradient(-130deg, #1D3195, #FEFEF2);
     
 }
 /*Banner*/
@@ -16,7 +16,8 @@ header {
 
 /*NavBar*/
 ul li a {
-    color: rgba(255,215,0,.4);
+    color: #DFD92A;
+    opacity: .35;
     margin-top: 10px;
 }
 ul li a:hover {
@@ -26,7 +27,7 @@ ul li a:hover {
 }
 /*Summary and menu*/
 .summary {
-    background-color: rgba(255,215,0,.25);
+    background-color: rgba(255,255,255,.25);
     border-radius: 20px;
     padding: 50px;
     font-size: 2rem;
@@ -159,7 +160,7 @@ ul li a:hover {
   left: 0 !important;
   right: 0 !important;
   width: 100%;
-  height: 380px;
+  height: 635px;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item .timeline-panel:before {
