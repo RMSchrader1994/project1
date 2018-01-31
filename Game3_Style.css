@@ -1,7 +1,3 @@
- body {
-    background: linear-gradient(-130deg, #6560F2, #4B1248);
-    
-}
 /*Banner*/
 header {
     background-image: url(img/Banner/headerBanner.jpg);
@@ -15,18 +11,24 @@ header {
 }
 
 /*NavBar*/
-ul li a {
-    color: rgba(255,215,0,.4);
-    margin-top: 10px;
+.navbar-header {
+  background-color: Gainsboro;
+  opacity: .5;
 }
-ul li a:hover {
-    background-color: lavender;
-    opacity: .5;
-    color: maroon;
+#mymenu{
+  background-color: Gainsboro;
+  opacity: .5;
+}
+ul li a {
+    color: firebrick;
+    margin-top: 10px;
+    
 }
 /*Summary and menu*/
 .summary {
-    background-color: rgba(255,215,0,.25);
+    background-color: Gainsboro;
+    opacity: .9;
+    color: black;
     border-radius: 20px;
     padding: 50px;
     font-size: 2rem;
@@ -159,7 +161,7 @@ ul li a:hover {
   left: 0 !important;
   right: 0 !important;
   width: 100%;
-  height: 380px;
+  height: 600px;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item .timeline-panel:before {
