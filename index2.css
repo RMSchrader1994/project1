@@ -1,0 +1,26 @@
+/*Banner*/
+header {
+    background-image: url(img/Banner/headerBanner.jpg);
+    height: 200px;
+    width:100%;
+    background-size: cover;
+}
+.logo {
+    height: 200px;
+    width:100%;
+}
+
+/*NavBar*/
+.navbar-header {
+  background-color: Gainsboro;
+  opacity: .5;
+}
+#mymenu{
+  background-color: Gainsboro;
+  opacity: .5;
+}
+ul li a {
+    color: firebrick;
+    margin-top: 10px;
+    
+}
