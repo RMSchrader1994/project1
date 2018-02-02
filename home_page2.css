@@ -1,0 +1,117 @@
+body {
+    background-image: url(img/index/bckgrnd.png);
+    background-size: cover;background-position:center;
+    }
+    /*Logos Design*/
+    .sierra {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        margin-top: 30px;
+    }
+    .talisman {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 230, .75);
+        border-radius: 20px;
+    }
+    .pinkerton {
+        width: 70%;
+        height: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+/*Banner*/
+header {
+    background-image: url(img/Banner/headerBanner.jpg);
+    height: 200px;
+    width:100%;
+    background-size: cover;
+}
+.logo {
+    height: 200px;
+    width:100%;
+}
+
+/*NavBar*/
+.navbar-header {
+  background-color: Gainsboro;
+  opacity: .5;
+}
+#mymenu{
+  background-color: Gainsboro;
+  opacity: .5;
+}
+ul li a {
+    color: firebrick;
+    margin-top: 10px;
+    
+}
+
+/*Game Sections*/
+
+.menu_pic_left {
+    width: 50%;
+    height: 150px;
+    float: right;
+    margin-right: 5px;
+    padding: 15px;
+}
+.menu_pic_right {
+    width: 50%;
+    height: 150px;
+    float: left;
+    margin-right: 5px;
+    padding: 15px;
+}
+.game {
+    background-color: rgba(218, 117, 255, .5);
+    border-radius: 10px;
+    width: 100%;
+    overflow:scroll;
+    min-height:100%;
+    padding: 15px;
+    margin: 15px;
+}
+p{
+    padding: 15px;
+    background-color: grey;
+    color: white;
+}
+
+.page-header {
+    background-color: rgba(255, 255, 230, .75);
+    padding: 10px;
+    text-align: center;
+}
+
+/*Read More Buttons*/
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

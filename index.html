@@ -4,105 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gabriel Knight</title>
-    <link rel="stylesheet" href="index2.css" type="text/css" />
+    <title>Landing Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
 <style>
-    h1 {
-     font-size: 5em;
-     font-family: cursive;
+   body {
+    background-color: black;
 }
-    h2 {
-    color: rgba(255,215,0,.8);
+
+.summary {
+    background-image: url(img/parchment.png);
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 2rem;
+}
+.text{ 
+  padding: 40px;
+  margin-left: 50px;
+  font-size: 2em;
+  color: firebrick;
+  font-family: 'Satisfy', cursive;
 }
 </style>
 </head>
-<body>
+<body onload="setTimeout(function(){window.location = 'index.html';}, 6500)">
+<audio autoplay>
+  <source src="narration.ogg" type="audio/ogg">
+  <source src="narration.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <header>
-                    <figure>
-                        <a href="landing.html">
-                            <img src="img/Banner/GKLogo.png" alt="Gabriel Knight Logo" class="logo">
-                        </a>
-                    </figure>
-                </header>
+            <div class="summary">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <div id="typedtext" class="text">
+                      </div>
             </div>
-        </div>
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-                <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills nav-justified">
-                    <li><a href="Game1.html">Sins of the Father</a></li>
-                    <li><a href="Game2.html">The Beast Within</a></li>
-                    <li><a href="Game3.html">Blood of the Sacred, Blood of the Damned</a></li>
-                    <li><a href="#">Quiz</a></li>
-                </ul>
-        </nav>
-        <div class="row">
-            <div class="col-sm-4">
-            </div>
-            <div class="col-sm-4">
-                <figure>
-                    <img src="img/index/talisman.jpg" alt="Talisman" class="talisman">
-                </figure>
-            </div>
-            <div class="col-sm-4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <figure>
-                    <img src="img/index/pinkerton.png" alt="Pinkerton Logo" class="pinkerton">
-                </figure>
-            </div>
-            <div class="col-sm-6">
-                <figure>
-                    <img src="img/index/sierra.png" alt="Sierra Logo" class="sierra">
-                </figure>
-            </div>
-        </div>
-        <div class="row">
-            <div class="page-header">
-                    <h1>Games</h1>
-            </div>
-            <div class="col-sm-6">
-                <div class="game">
-            <h2><a href="Game1.html">Sins of the Father</a></h2>
-            
-            <figure><img src="img/index/sFMenu.png" alt="Game1_Menu" class="menu_pic_left"></figure>
-            <p>"The first game in the series introduces Gabriel Knight, a financially struggling horror novelist based in New Orleans. Gabriel is following a series of homicides, dubbed "The Voodoo Murders" for their apparent voodoo overtones hoping to use the police investigation, led by his childhood best friend Detective Mosely, as the basis of a new novel. However, as he draws deeper into the investigation, and his shop assistant Grace Nakimura performs historical research for him, Gabriel links the murder spree both to New Orleans' voodoo past and towards the beautiful and mysterious New Orleans socialite, Malia Gedde."
-                </p>
-                </div>
-                
-            </div>
-            <div class="col-sm-6">
-            <div class="game">
-            <h2><a href="Game2.html">The Beast Within</a></h2>
-            <figure><img src="img/index/beastWithinMenu.png" alt="Game2_Menu" class="menu_pic_right"></figure>
-            <p>"The second game (also known as Gabriel Knight 2: The Beast Within) follows Gabriel on his second Schattenjäger case. A year after the events of Sins of the Fathers, he has moved to his ancestral home in Bavaria, Germany to write his new novel. The population of Rittersberg, the seat of the Schattenjägers, are well aware of his family's reputation and when word reaches them of what is reported to be a werewolf attack in Munich, they compel Gabriel to go and investigate."
-                </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="game">
-            <h2><a href="Game3.html">Blood of the Sacred, Blood of the Damned</a></h2>
-            <figure><img src="img/index/bSBDMenu.png" alt="Game3_Menu" class="menu_pic_left"></figure>
-           <p>"Four years after the events of the second game, Gabriel and Grace are asked by the exiled Prince of Albany to protect his newborn son from a centuries-old family threat that appears to be a group of vampires. Shortly afterwards, the boy is kidnapped and Gabriel follows the kidnappers to the mysterious French village of Rennes-le-Château. Gabriel's arrival coincides with that of a tour group whose members are all supposedly in town hunting for a legendary local treasure linked to the Knights Templar, the Cathars and potentially connected to the Holy Grail."
-               </p>
-                </div>
-            </div>
-        
         </div>
     </div>
+ </div>
+<script src="landing3.js"></script>
 </body>
 </html>
