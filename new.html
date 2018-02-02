@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Kevin's Kwiz!</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+<style>
+    body {
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+#quiz {
+	margin-left: 10px;
+	background: #d2def2;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+
+}
+
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+
+#button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+
+
+#button:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+
+}
+
+#after_submit {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+
+
+}
+
+#picture {
+	width: 375px;
+	height: 245px;
+}
+
+
+
+#mc {
+	display: inline;
+} 
+
+</style>
+</head>
+
+
+<body>
+<h1>This is best quiz on the internet!</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">What year did Madame Cazaneaux's family originally arrive in the city?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">Which Star Wars actor voiced Franklin Mosely?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Harrison Ford"> Harrison Ford<br>
+<input type = "radio" id = "mc" name = "question2" value = "Mark Hamill"> Mark Hamill<br>
+<input type = "radio" id = "mc" name = "question2" value = "Billy Dee Williams"> Billy Dee Williams<br>
+<input type = "radio" id = "mc" name = "question2" value = "Carrie Fisher"> Carrie Fisher<br>
+
+<p class = "questions">What American city does most of the action take place?</p>
+
+<input type = "select" id = "mc" name = "question3">
+             <option value="blank">Pick one...</option>     
+             <option value="Boston">Boston</option> 
+             <option value="Seattle">Seattle</option>
+             <option value="San Francisco">San Francisco</option> 
+             <option value="Chicago">Chicago</option> 
+             <option value="New Orleans">New Orleans</option> 
+             <option value="Orlando">Orlando</option> 
+             <option value="Denver">Denver</option> 
+             <option value="Philadelphia">Philadelphia</option>   
+             </select>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+<script>
+    function check(){
+
+	var question1 = document.quiz.question1.value;
+	var question2 = document.quiz.question2.value;
+	var question3 = document.quiz.question3.value;
+	var correct = 0;
+
+
+	if (question1 == "1700") {
+		correct++;
+}
+	if (question2 == "Mark Hamill") {
+		correct++;
+}	
+	if (question3 == "New Oreleans") {
+		correct++;
+	}
+	
+	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
+	var messages = ["Great job!", "That's just okay", "You really need to do better"];
+	var score;
+
+	if (correct == 0) {
+		score = 2;
+	}
+
+	if (correct > 0 && correct < 3) {
+		score = 1;
+	}
+
+	if (correct == 3) {
+		score = 0;
+	}
+
+	document.getElementById("after_submit").style.visibility = "visible";
+
+	document.getElementById("message").innerHTML = messages[score];
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+	document.getElementById("picture").src = pictures[score];
+	}
+</script>
+</body>

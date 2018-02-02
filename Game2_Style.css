@@ -187,6 +187,7 @@ ul li a:hover {
 }
 h4 {
     padding-top: 50px;
+    font-family: 'Cinzel', serif;
 }
 
 /*Characters*/
@@ -214,3 +215,10 @@ h4 {
   opacity: 0;
 }
 
+p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1em;
+}
+.timeline-body {
+  font-family: 'Economica', sans-serif;
+}

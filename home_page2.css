@@ -38,18 +38,15 @@ header {
 }
 
 /*NavBar*/
-.navbar-header {
-  background-color: Gainsboro;
-  opacity: .5;
-}
-#mymenu{
-  background-color: Gainsboro;
-  opacity: .5;
-}
 ul li a {
-    color: firebrick;
+    color: #DFD92A;
+    opacity: .35;
     margin-top: 10px;
-    
+}
+ul li a:hover {
+    background-color: lavender;
+    opacity: .5;
+    color: maroon;
 }
 
 /*Game Sections*/
@@ -115,3 +112,5 @@ p{
   opacity: 1;
   right: 0;
 }
+
+

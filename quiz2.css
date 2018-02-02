@@ -1,0 +1,28 @@
+ body {
+    background: linear-gradient(-130deg, #1D3195, #FEFEF2);
+    
+}
+/*Banner*/
+header {
+    background-image: url(img/Banner/headerBanner.jpg);
+    height: 200px;
+    width:100%;
+    background-size: cover;
+}
+.logo {
+    height: 200px;
+    width:100%;
+}
+
+/*NavBar*/
+ul li a {
+    color: #DFD92A;
+    opacity: .35;
+    margin-top: 10px;
+}
+ul li a:hover {
+    background-color: lavender;
+    opacity: .5;
+    color: maroon;
+}
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quizzes</title>     
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="quiz2.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+            <div class="col-sm-12">
+                <header>
+                    <figure>
+                        <a href="home_page.html">
+                            <img src="img/Banner/GKLogo.png" alt="Gabriel Knight Logo" class="logo">
+                        </a>
+                    </figure>
+                </header>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills nav-justified">
+                    <li><a href="Game1.html">Sins of the Father</a></li>
+                    <li><a href="Game2.html">The Beast Within</a></li>
+                    <li><a href="Game3.html">Blood of the Sacred, Blood of the Damned</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+        </nav>
+  <h2>Game Quizzes</h2>
+  <p>Test your knowledge on each fo the three Gabriel Knight games!</p>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Sins of the Father</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <form name="quiz1" id="quiz1" onsubmit="return false">
+                <fieldset>
+                <h4>1.) Which Star Wars actor voiced Franklin Mosely?</h4>
+                    <label for="question1"><input type="radio" name="question1" value="Harrison Ford"> Harrison Ford</label><br />
+                    <label for="question1"><input type="radio" name="question1" value="Mark Hamill">Mark Hamill</label><br />
+                    <label for="question1"><input type="radio" name="question1" value="Billy Dee Williams"> Billy Dee Williams </label><br />
+                    <label for="question1"><input type="radio" name="question1" value="Carrie Fisher"> Carrie Fisher </label><br />
+                    
+                <h4>2.) What American city does most of the action take place?</h4>
+                <label for="question2">City:</label>
+                <select id="question2">
+             <option value="blank">Pick one...</option>     
+             <option value="Boston">Boston</option> 
+             <option value="Seattle">Seattle</option>
+             <option value="San Francisco">San Francisco</option> 
+             <option value="Chicago">Chicago</option> 
+             <option value="New Orleans">New Orleans</option> 
+             <option value="Orlando">Orlando</option> 
+             <option value="Denver">Denver</option> 
+             <option value="Philadelphia">Philadelphia</option>   
+             </select>
+             
+             <h4>3.) What year did Madame Cazaneaux's family originally arrive in the city?</h4>
+             <label for="question3" class="cazaneaux_year">Year:</label> 
+            <input type="text" placeholder="Year" required="Username"
+            class="input" name="year" value="" />
+            
+            <h4>4.) What was the name of Gabriel's anscestor who fell in love and eventually betrayed Tetelo?</h4>
+            <label for="question4" class="field1"><input type="radio" name="question4" value="Wolfgang"> Wolfgang</label><br />
+                    <label for="question4" class="field1"><input type="radio" name="question4" value="Friedrich"> Friecrich </label><br />
+                    <label for="question4" class="field1"><input type="radio" name="question4" value="Gunther"> Gunther </label><br />
+                    <label for="question4" class="field1"><input type="radio" name="question4" value="Heinz"> Heinz </label><br />
+             <h4>5.) Gabriel located the Schattenjager talisman with Tetelo's remains in which African country?</h4>
+                 <label for="question5" class="field">Country:</label>
+            <select id="question5">
+             <option value="blank">Pick one...</option>     
+             <option value="Madagascar">Madagascar</option> 
+             <option value="Lybia">Lybia</option>
+             <option value="Niger">Niger</option> 
+             <option value="Morocco">Morocco</option> 
+             <option value="South Africa">South Africa</option> 
+             <option value="People's Republic of Benin">People's Republic of Benin</option> 
+             <option value="Zimbabwe">Zimbabwe</option> 
+             <option value="Nambia">Nambia</option>   
+             </select>
+             <br />
+             <br />
+             <button onclick="check0()">View Results</button>
+             </fieldset>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">The Beast Within</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            <form onsubmit="return false">
+                <fieldset>
+                <h4>1.) Who portrayed Werner Huber?</h4>
+                    <label for="question_2.1" class="field1"><input type="radio" name="question_2.1" value="Peter J. Lucas"> Peter J. Lucas </label><br />
+                    <label for="question_2.1" class="field1"><input type="radio" name="question_2.1" value="Christopher Lee"> Christopher Lee </label><br />
+                    <label for="question_2.1" class="field1"><input type="radio" name="question_2.1" value="Kay E. Kuter"> Kay E. Kuter </label><br />
+                    <label for="question_2.1" class="field1"><input type="radio" name="question_2.1" value="Patrick Stewart"> Patrick Stewart </label><br />
+                    
+                <h4>2.) What is the surname of the American Tourists who warn of 'The Black Wolf'?</h4>
+                <label for="question_2.2" class="field">City:</label>
+            <select id="question_2.2">
+             <option value="blank">Pick one...</option>     
+             <option value="Stewart">Stewart</option> 
+             <option value="Sinclair">Sinclair</option>
+             <option value="Smith">Smith</option> 
+             <option value="Jensen">Jensen</option> 
+             <option value="Curry">Curry</option> 
+             <option value="Gette">Gette</option> 
+             <option value="Wilkes">Wilkes</option> 
+             <option value="Hartridge">Hartridge</option>   
+             </select>
+             
+             <h4>3.) In what year was Baron Friedrich von Glower born?</h4>
+             <label for="question_2.3" class="field">Year:</label> 
+            <input type="text" placeholder="Year" required="Username"
+            class="input" name="year" />
+            
+            <h4>4.) Which member of the hunting club was turned into a werewolf prior to the game?</h4>
+            <label for="question_2.4" class="field1"><input type="radio" name="question_2.4" value="Garr von Zell">Garr von Zell</label><br />
+                    <label for="question_2.4" class="field1"><input type="radio" name="question_2.4" value="Stephan Klingmann"> Stephen Klingmann </label><br />
+                    <label for="question_2.4" class="field1"><input type="radio" name="question_2.4" value="Otto Preiss"> Otto Preiss </label><br />
+                    <label for="question_2.4" class="field1"><input type="radio" name="question_2.4" value="Frank Hennemann"> Frank Hennemann </label><br />
+             <h4>5.) Which locations did Grace visit in Chapter 4(pick 2)?</h4>
+                 <label for="question_2.5" class="field">Location:</label><br />
+            <label for="starter" class="field1">
+                <input type="checkbox" name="Seeshaupt" value="Seeshaupt">Seeshaupt</label><br />
+            <label for="Hohenschwangau" class="field1">
+                <input type="checkbox"  name="Hohenschwangau" value="Hohenschwangau">Hohenschwangau Castle</label><br />
+            <label for="Nymphenburg" class="field1">
+                <input type="checkbox" name="Nymphenburg" value="Nymphenburg">Nymphenburg Palace</label><br />
+            <label for="Neuschwanstein" class="field1">
+                <input type="checkbox" name="Neuschwanstein" value="Neuschwanstein">Neuschwanstein Castle</label><br />
+                 <br />
+             <br />
+             <button onclick="check1()">View Results</button>
+             </fieldset>
+            </form>
+            </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Blood of the Sacred, Blood of the Damned</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+            <form onsubmit="return false">
+                <fieldset>
+                <h4>1.) Which group is <strong>NOT</strong> involved in the mystery of the town?</h4>
+                    <label for="question_3.1" class="field1"><input type="radio" name="question_3.1" value="Free Masons"> Free Masons </label><br />
+                    <label for="question_3.1" class="field1"><input type="radio" name="question_3.1" value="Priory of Sion"> Priory of Sion </label><br />
+                    <label for="question_3.1" class="field1"><input type="radio" name="question_3.1" value="Knights Templar"> Knights Templar </label><br />
+                    <label for="question_3.1" class="field1"><input type="radio" name="question_3.1" value="Illuminati"> Illuminati </label><br />
+                    
+                <h4>2.) Grace and Gabriel were hired by Prince James of...?</h4>
+                <label for="question_3.2" class="field">City:</label>
+            <select id="question_3.2">
+             <option value="blank">Pick one...</option>     
+             <option value="Stewart">Stewart</option> 
+             <option value="Albany">Albany</option>
+             <option value="Barclye">Barclye</option> 
+             <option value="Garlies">Garlies</option> 
+             <option value="Minto">Minto</option> 
+             <option value="Atholl">Atholl</option> 
+             <option value="Bute">Bute</option> 
+             <option value="Ardvorlich">Ardvorlich</option>
+             <option value="Physgill">Physgill</option> 
+             <option value="Rothesay">Rothesay</option> 
+             </select>
+             
+             <h4>3.) Grace and Gabriel are investigating in which town?</h4>
+                   <label for="question_3.3" class="field1"><input type="radio" name="question_3.3" value="Lourmarin"> Lourmarin </label><br />
+                   <label for="question_3.3" class="field1"><input type="radio" name="question_3.3" value="Bains"> Rennes les Bains </label><br />
+                    <label for="question_3.3" class="field1"><input type="radio" name="question_3.3" value="Roussillon"> Roussillon </label><br />
+                    <label for="question_3.3" class="field1"><input type="radio" name="question_3.3" value="Chateau"> Rennes le Chateau </label><br />
+            
+            <h4>4.) Do Grace and Gabriel sleep together?</h4>
+            <label for="question_3.4" class="field1"><input type="radio" name="question_3.4" value="Yes">Yes</label><br />
+                    <label for="question_3.4" class="field1"><input type="radio" name="question_3.4" value="No"> No </label><br />
+            
+                <h4>5.) Where does Buchelli say his train came from and where did it actually come from?</h4>
+                 <label for="question_2.5" class="field">Location:</label><br />
+            <label for="starter" class="field1">
+                <input type="checkbox" name="Naples" value="Naples"> Naples</label><br />
+            <label for="Hohenschwangau" class="field1">
+                <input type="checkbox"  name="Rome" value="Rome"> Rome </label><br />
+            <label for="Nymphenburg" class="field1">
+                <input type="checkbox" name="Florence" value="Florence"> Florence</label><br />
+            <label for="Neuschwanstein" class="field1">
+                <input type="checkbox" name="Bologna" value="Bologna"> Bologna</label><br />
+                 <br />
+             <br />
+             <button onclick="check2()">View Results</button>
+             </fieldset>
+             </form>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<script src="quiz3.js"></script>
+</body>
+</html>
