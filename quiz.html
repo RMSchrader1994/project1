@@ -74,7 +74,7 @@
              <h4>3.) What year did Madame Cazaneaux's family originally arrive in the city?</h4>
              <label for="question3" class="cazaneaux_year">Year:</label> 
             <input type="text" placeholder="Year" required="Username"
-            class="input" name="year" value="" />
+            class="input" name="year" id="numb" value="" />
             
             <h4>4.) What was the name of Gabriel's anscestor who fell in love and eventually betrayed Tetelo?</h4>
             <label for="question4" class="field1"><input type="radio" name="question4" value="Wolfgang"> Wolfgang</label><br />
@@ -96,7 +96,8 @@
              </select>
              <br />
              <br />
-             <button onclick="check0()">View Results</button>
+             <input type="submit" value="Submit" onclick="check0()">
+             <p id="demo"></p>
              </fieldset>
             </form>
         </div>
@@ -110,7 +111,7 @@
       </div>
       <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body">
-            <form onsubmit="return false">
+            <form name="quiz2" onsubmit="return false">
                 <fieldset>
                 <h4>1.) Who portrayed Werner Huber?</h4>
                     <label for="question_2.1" class="field1"><input type="radio" name="question_2.1" value="Peter J. Lucas"> Peter J. Lucas </label><br />
@@ -135,7 +136,7 @@
              <h4>3.) In what year was Baron Friedrich von Glower born?</h4>
              <label for="question_2.3" class="field">Year:</label> 
             <input type="text" placeholder="Year" required="Username"
-            class="input" name="year" />
+            class="input" id="numb2" name="year" />
             
             <h4>4.) Which member of the hunting club was turned into a werewolf prior to the game?</h4>
             <label for="question_2.4" class="field1"><input type="radio" name="question_2.4" value="Garr von Zell">Garr von Zell</label><br />
@@ -145,16 +146,17 @@
              <h4>5.) Which locations did Grace visit in Chapter 4(pick 2)?</h4>
                  <label for="question_2.5" class="field">Location:</label><br />
             <label for="starter" class="field1">
-                <input type="checkbox" name="Seeshaupt" value="Seeshaupt">Seeshaupt</label><br />
+                <input type="checkbox" name="Seeshaupt" value="Seeshaupt" id="numb3">Seeshaupt</label><br />
             <label for="Hohenschwangau" class="field1">
                 <input type="checkbox"  name="Hohenschwangau" value="Hohenschwangau">Hohenschwangau Castle</label><br />
             <label for="Nymphenburg" class="field1">
                 <input type="checkbox" name="Nymphenburg" value="Nymphenburg">Nymphenburg Palace</label><br />
             <label for="Neuschwanstein" class="field1">
-                <input type="checkbox" name="Neuschwanstein" value="Neuschwanstein">Neuschwanstein Castle</label><br />
+                <input type="checkbox" name="Neuschwanstein" value="Neuschwanstein" id="numb3">Neuschwanstein Castle</label><br />
                  <br />
              <br />
              <button onclick="check1()">View Results</button>
+             <p id="demo2"></p>
              </fieldset>
             </form>
             </div>
@@ -168,7 +170,7 @@
       </div>
       <div id="collapse3" class="panel-collapse collapse">
         <div class="panel-body">
-            <form onsubmit="return false">
+            <form name ="quiz3" onsubmit="return false">
                 <fieldset>
                 <h4>1.) Which group is <strong>NOT</strong> involved in the mystery of the town?</h4>
                     <label for="question_3.1" class="field1"><input type="radio" name="question_3.1" value="Free Masons"> Free Masons </label><br />
@@ -205,9 +207,9 @@
                 <h4>5.) Where does Buchelli say his train came from and where did it actually come from?</h4>
                  <label for="question_2.5" class="field">Location:</label><br />
             <label for="starter" class="field1">
-                <input type="checkbox" name="Naples" value="Naples"> Naples</label><br />
+                <input type="checkbox" name="Naples" value="Correct"> Naples</label><br />
             <label for="Hohenschwangau" class="field1">
-                <input type="checkbox"  name="Rome" value="Rome"> Rome </label><br />
+                <input type="checkbox"  name="Rome" value="Correct"> Rome </label><br />
             <label for="Nymphenburg" class="field1">
                 <input type="checkbox" name="Florence" value="Florence"> Florence</label><br />
             <label for="Neuschwanstein" class="field1">
@@ -215,6 +217,7 @@
                  <br />
              <br />
              <button onclick="check2()">View Results</button>
+             <p id="demo3"></p>
              </fieldset>
              </form>
         </div>
