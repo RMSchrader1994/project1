@@ -23,16 +23,39 @@ function check1(){
     if (document.forms["quiz2"]["question_2.2"].value == "Smith") {
         score++;}
     if (document.getElementById("numb2").value == 1738) {
-        score++;
-    }
-    if (document.forms["quiz2"]["question_2.3"].value == 'Neuschwanstein') {
-        score++;
-    }
+        score++;}
     if (document.forms["quiz2"]["question_2.4"].value == "Garr von Zell") {
         score++;}
-
+    
+   var a4 = document.getElementsByName('question_2.5');
+   var a4answers = new Array();
+   var a4right = new Array('Seeshaupt','Neuschwanstein');
+   var a4bool = true;
+ 
+   for(i = 0; i < a4.length; i++) {
+      if(a4[i].checked) {
+         a4answers.push(a4[i].value);
+      }
+   }
+   a4answers.sort();
+   a4right.sort();
+   if(a4answers.length == a4right.length) {
+      for(i = 0; i < a4answers.length; i++) {
+         if(a4answers[i] != a4right[i]) {
+            a4bool = false;
+            break;
+         }
+      }
+   }
+   else {
+      a4bool = false;
+   }
+   if(a4bool == true) {
+      score++;
+   }
+    
     document.getElementById("demo2").innerHTML = score+"/5";
-    alert("You finished quiz the Beat Within quiz, you should try the other quizzes!")
+    alert("You finished quiz the Beat Within quiz, you should try the other quizzes!");
 }
 
 function check2(){
@@ -45,6 +68,33 @@ function check2(){
         score++;}
     if (document.forms["quiz3"]["question_3.4"].value == "Yes") {
         score++;}
+    
+    var a4 = document.getElementsByName('question_3.5');
+   var a4answers = new Array();
+   var a4right = new Array('Rome','Naples');
+   var a4bool = true;
+ 
+   for(i = 0; i < a4.length; i++) {
+      if(a4[i].checked) {
+         a4answers.push(a4[i].value);
+      }
+   }
+   a4answers.sort();
+   a4right.sort();
+   if(a4answers.length == a4right.length) {
+      for(i = 0; i < a4answers.length; i++) {
+         if(a4answers[i] != a4right[i]) {
+            a4bool = false;
+            break;
+         }
+      }
+   }
+   else {
+      a4bool = false;
+   }
+   if(a4bool == true) {
+      score++;
+   }
     document.getElementById("demo3").innerHTML = score+"/5";
     alert("You finished quiz the Blood of the Sacred, Blood of the Damned, you should try the other quizzes!")
 }
