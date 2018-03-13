@@ -215,3 +215,14 @@ h4 {
   opacity: 0;
 }
 
+.bio {
+  font-size: 40px;
+  font-family: 'Tangerine', cursive;
+}
+.timeline-body {
+  font-family: 'Merienda', cursive;
+  font-size: 13px;
+}
+p {
+  font-family: 'Merienda', cursive;
+}

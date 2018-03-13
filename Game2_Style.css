@@ -217,8 +217,12 @@ h4 {
 
 p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1em;
+}
+.bio {
+  font-size: 30px;
 }
 .timeline-body {
   font-family: 'Economica', sans-serif;
+  font-size: 18px;
 }
+
