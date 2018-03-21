@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+.summary {
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 2rem;
+}
+.text{ 
+  padding: 40px;
+  margin-left: 50px;
+  font-size: 2em;
+  color: firebrick;
+  font-family: 'Satisfy', cursive;
+}

@@ -4,7 +4,7 @@
 }
 /*Banner*/
 header {
-    background-image: url(img/Banner/headerBanner.jpg);
+    background-image: url(../media/img/Banner/headerBanner.jpg);
     height: 200px;
     width:100%;
     background-size: cover;
