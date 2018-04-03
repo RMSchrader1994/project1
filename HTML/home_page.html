@@ -17,9 +17,17 @@
     h2 {
     color: rgba(255,215,0,.8);
 }
+body {
+    opacity:0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+}
 </style>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">

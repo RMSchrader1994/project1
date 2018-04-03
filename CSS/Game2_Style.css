@@ -17,7 +17,7 @@ header {
 /*NavBar*/
 ul li a {
     color: #DFD92A;
-    opacity: .35;
+    opacity: .5;
     margin-top: 10px;
 }
 ul li a:hover {
@@ -27,7 +27,7 @@ ul li a:hover {
 }
 /*Summary and menu*/
 .summary {
-    background-color: rgba(255,255,255,.25);
+    background-color: rgba(255,255,255,.5);
     border-radius: 20px;
     padding: 50px;
     font-size: 2rem;
@@ -183,7 +183,7 @@ ul li a:hover {
   left: 43px;
 }
 .page-header {
-    color: rgba(255,215,0,.4);
+    color: rgba(255,215,0,.7);
 }
 h4 {
     padding-top: 50px;
@@ -217,6 +217,7 @@ h4 {
 
 p {
   font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
 }
 .bio {
   font-size: 30px;

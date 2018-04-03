@@ -1,6 +1,5 @@
  body {
     background: linear-gradient(-130deg, #6560F2, #4B1248);
-    
 }
 /*Banner*/
 header {
@@ -190,6 +189,7 @@ h4 {
 }
 .timeline-body {
   font-family: 'Indie Flower', cursive;
+  color: black;
 }
 .timeline-title {
   font-family: 'Acme', sans-serif;

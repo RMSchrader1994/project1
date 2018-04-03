@@ -20,7 +20,7 @@ header {
   opacity: .5;
 }
 ul li a {
-    color: firebrick;
+    color: white;
     margin-top: 10px;
     
 }
@@ -184,7 +184,7 @@ ul li a {
   left: 43px;
 }
 .page-header {
-    color: rgba(255,215,0,.4);
+    color: white;
 }
 h4 {
     padding-top: 50px;
@@ -225,4 +225,7 @@ h4 {
 }
 p {
   font-family: 'Merienda', cursive;
+}
+#myMenu {
+  color: white;
 }

@@ -1,4 +1,3 @@
-
 function check0(){
     var score = 0;
     if (document.forms["quiz1"]["question1"].value == "Mark Hamill") {
@@ -14,6 +13,7 @@ function check0(){
         score++;}
     document.getElementById("demo").innerHTML = score+"/5";
     alert("You finished the Sins of the Father quiz, you should try the other quizzes!")
+    
 }
 
 function check1(){
@@ -98,6 +98,3 @@ function check2(){
     document.getElementById("demo3").innerHTML = score+"/5";
     alert("You finished quiz the Blood of the Sacred, Blood of the Damned, you should try the other quizzes!")
 }
-	
-	
-	
