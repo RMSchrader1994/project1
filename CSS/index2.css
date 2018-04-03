@@ -1,16 +1,25 @@
 body {
-    background-color: black;
+    background-color: #422c03;
 }
 
 .summary {
     border-radius: 20px;
     padding: 50px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .text{ 
   padding: 40px;
   margin-left: 50px;
   font-size: 2em;
-  color: firebrick;
+  color: black;
   font-family: 'Satisfy', cursive;
+}
+.container {
+     background: #d1913c; /* fallback for old browsers */
+            background: -webkit-linear-gradient(bottom, #d1913c, #ffd194);
+            background: -moz-linear-gradient(bottom, #d1913c, #ffd194);
+            background: -o-linear-gradient(bottom, #d1913c, #ffd194);
+            background: linear-gradient(to top, #d1913c, #ffd194); /* Chrome 10-25, Safari 5.1-6 */
+    margin: 50px auto;
+    border-radius: 10px;
 }
